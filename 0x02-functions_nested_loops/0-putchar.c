@@ -1,18 +1,22 @@
 #include "main.h"
+
 /**
- * main - Write _putchar
- * Description: This program print function to the screen
- * Return: 0 (Succes)
+ * main - print _putchar
+ *
+ * Descriptions: print _putchar
+ *
+ * Return: Always 0 (Success)
+ *
  */
 int main(void)
 {
 int ch;
-char content[9] = "_putchar";
+char x[] = "_putchar";
+
 for (ch = 0; ch < 8; ch++)
 {
-_putchar(content[ch]);
+	_putchar(x[ch]);
 }
 _putchar('\n');
-
 return (0);
 }
