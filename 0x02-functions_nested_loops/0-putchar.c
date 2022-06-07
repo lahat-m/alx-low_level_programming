@@ -7,7 +7,7 @@
 int main(void)
 {
 int ch;
-char content[9] = "_putchar";
+char content[9] = "here";
 for (ch = 0; ch < 8; ch++)
 {
 _putchar(content[ch]);
