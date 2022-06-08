@@ -1,8 +1,8 @@
-#incldue "main.h"
+#include "main.h"
 /**
  * times_table - print 9 times table
  *
- * Return: np return
+ * Return: no return
  */
 void times_table(void)
 	int a, b, c;
@@ -27,4 +27,4 @@ void times_table(void)
 	}
 	_putchar('\n');
 }
-}
+
