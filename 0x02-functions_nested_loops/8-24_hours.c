@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 /**
  * jack_bauer - print every minute
  *
@@ -6,27 +6,22 @@
  */
 void jack_bauer(void)
 {
-	int w, x, y, z;
-
-	for (w = 48; w <= 50; w++)
+	int i, j;
+	i = 0;
+	while (i < 24)
 	{
-		for (x = 48; x <= 50; x++)
+		j = 0;
+		while (j < 60)
 		{
-			for (y = 48; y <= 50; y++)
-			{
-				for (z = 48; z <= 50; z++)
-				{
-					if (w >= 50 && x >= 52)
-					break;
-				_putchar(w);
-				_putchar(x);
-				_putchar(58);
-				_putchar(y);
-				_putchar(z);
-				_putchar('\n');
-				}
-			}
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+			_putchar(:);
+			_putchar((j / 10) + '0');
+			_putchar((j % 10) + '0');
+			_putchar('\n');
+			j++;
 		}
+		j++;
 	}
-
 }
+
