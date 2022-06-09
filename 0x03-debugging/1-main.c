@@ -13,8 +13,7 @@ int main(void)
 
 	i = 0;
 
-	/**
-	 * whilte (i < 10)
+	/* whilte (i < 10)
 	 * {
 	 * putchar(i);
 	 * }
