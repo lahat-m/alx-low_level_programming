@@ -5,7 +5,7 @@
  * @a: integer
  * @b: integer
  *
- * Return: 0
+ * Return: product
  */
 
 int mul(int a, int b)
@@ -13,5 +13,5 @@ int mul(int a, int b)
 	int product;
 
 	product = a * b;
-	return (0);
+	return (product);
 }
