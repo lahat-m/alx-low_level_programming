@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 /**
  * _strncpy - copy a string
  * @dest: destination - input value
