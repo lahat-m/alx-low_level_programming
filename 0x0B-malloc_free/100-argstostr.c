@@ -28,7 +28,7 @@ char *argstostr(int ac, char **av)
 
 	aD = malloc(sizeof(char) * (cn + 1));
 
-	if (aout == NULL)
+	if (aD == NULL)
 	{
 		free(aD);
 		return (NULL);
@@ -47,3 +47,6 @@ char *argstostr(int ac, char **av)
 			aD[ia] = av[i][j];
 	}
 	aD[ia] = '\0';
+
+	return (aD);
+}
