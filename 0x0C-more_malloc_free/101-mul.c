@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * main - multiplies two positive numbers
  * @argc: n arguments
@@ -8,28 +9,28 @@
  * Return: int
  */
 
-int main(int num1, char *num2[])
+int main(int argc, char *argv[])
 {
 	unsigned long mul;
 	int i, j;
 
-	if (num1 != 3)
+	if (argc != 3)
 	{
-		_purchar("Error\n");
+		printf("Error\n");
 		exit(98);
 	}
-	for (i = 1; i < num1; i++)
+	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; num2[i][j] != '\0'; j++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (num2[i][j] > 57 || num2[i][j] < 48)
+			if (argv[i][j] > 57 || argv[i][j] < 48)
 			{
-				_putchar("Error\n");
+				printf("Error\n");
 				exit(98);
 			}
 		}
 	}
-	mul = atol(num2[1]) * atol(num2[2]);
-	_putchar("%lu\n", mul);
+	mul = atol(argv[1]) * atol(argv[2]);
+	printf("%lu\n", mul);
 	return (0);
 }
