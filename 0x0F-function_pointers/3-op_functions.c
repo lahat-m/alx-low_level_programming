@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "3-calc.h"
+
 /**
  * op_add - calculates the sum of two integers.
  * @a: first integer value
@@ -11,6 +12,8 @@ int op_add(int a, int b)
 {
 	    return (a + b);
 }
+
+
 /**
  * op_sub - difference of two integers.
  * @a: first integer value
@@ -22,6 +25,7 @@ int op_sub(int a, int b)
 {
 	    return (a - b);
 }
+
 /**
  * op_mul - product of two integers.
  * @a: first integer value
@@ -33,6 +37,7 @@ int op_mul(int a, int b)
 {
 	    return (a * b);
 }
+
 /**
  * op_div - calculates the division of two integers.
  * @a: 1st integer value
@@ -44,6 +49,7 @@ int op_div(int a, int b)
 {
 	    return (a / b);
 }
+
 /**
  * op_mod - remainder of division of integers.
  * @a: first integer
