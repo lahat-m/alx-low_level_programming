@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * print_dlistint - prints elems of a
@@ -28,4 +29,3 @@ size_t print_dlistint(const dlistint_t *h)
 
 	return (count);
 }
-
